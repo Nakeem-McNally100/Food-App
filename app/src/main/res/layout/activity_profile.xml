@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorMainGrey"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorMainBlack"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="300dp"
+            app:cardCornerRadius="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="255dp"
+                android:layout_gravity="center_vertical|end"
+                android:id="@+id/settingbtn"
+                android:layout_width="35dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_settings"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"/>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    app:cardCornerRadius="100dp"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:background="@color/colorMainWhite"
+        android:id="@+id/imageView"
+        android:layout_width="95dp"
+        android:layout_gravity="center"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/ic_person"
+        />
+
+</androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amy Stewart"
+                android:textSize="22dp"
+                android:textStyle="normal"
+                android:textColor="@color/colorMainBlack"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/editAccountbtn"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottoncolored"
+            android:drawableRight="@drawable/ic_baseline_edit_24"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorMainBlack"
+            android:text="Edit Account"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+
+
+
+        <Button
+            android:id="@+id/logOutbtn"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottoncolored"
+            android:drawableRight="@drawable/ic_exit_to_app_"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:text="Log Out"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorMainBlack"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorMainWhite"
+        app:menu="@menu/menudash" />
+
+</RelativeLayout>
